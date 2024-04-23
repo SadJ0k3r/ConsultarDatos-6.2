@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet" targetNamespace="http://tempuri.org/PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet.xsd" xmlns:mstns="http://tempuri.org/PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet.xsd" xmlns="http://tempuri.org/PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString (Settings)" PropertyReference="ApplicationSettings.ConsultarDatos_6._2.Properties.Settings.GlobalReference.Default.PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ActividadesTableAdapter" GeneratorDataComponentClassName="ActividadesTableAdapter" Name="Actividades" UserDataComponentName="ActividadesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString (Settings)" DbObjectName="Actividades" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdActividad, IdEstudiante, Descripcion, FechaActividad, Puntaje FROM Actividades</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EstudiantesTableAdapter" GeneratorDataComponentClassName="EstudiantesTableAdapter" Name="Estudiantes" UserDataComponentName="EstudiantesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString (Settings)" DbObjectName="Estudiantes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdEstudiante, Nombre, Telefono, Direccion, Pueblo, [Zip Code] FROM Estudiantes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProfesorTableAdapter" GeneratorDataComponentClassName="ProfesorTableAdapter" Name="Profesor" UserDataComponentName="ProfesorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString (Settings)" DbObjectName="Profesor" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Nombre, Apellido, Edad, Pueblo FROM Profesor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PueblosTableAdapter" GeneratorDataComponentClassName="PueblosTableAdapter" Name="Pueblos" UserDataComponentName="PueblosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PROG3355L_M6_BASE_DATOS_PUNTAJESConnectionString (Settings)" DbObjectName="Pueblos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Pueblo FROM Pueblos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet" msprop:Generator_DataSetName="PROG3355L_M6_BASE_DATOS_PUNTAJESDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Actividades" msprop:Generator_RowEvHandlerName="ActividadesRowChangeEventHandler" msprop:Generator_RowDeletedName="ActividadesRowDeleted" msprop:Generator_RowDeletingName="ActividadesRowDeleting" msprop:Generator_RowEvArgName="ActividadesRowChangeEvent" msprop:Generator_TablePropName="Actividades" msprop:Generator_RowChangedName="ActividadesRowChanged" msprop:Generator_RowChangingName="ActividadesRowChanging" msprop:Generator_TableClassName="ActividadesDataTable" msprop:Generator_RowClassName="ActividadesRow" msprop:Generator_TableVarName="tableActividades" msprop:Generator_UserTableName="Actividades">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Estudiantes" msprop:Generator_RowEvHandlerName="EstudiantesRowChangeEventHandler" msprop:Generator_RowDeletedName="EstudiantesRowDeleted" msprop:Generator_RowDeletingName="EstudiantesRowDeleting" msprop:Generator_RowEvArgName="EstudiantesRowChangeEvent" msprop:Generator_TablePropName="Estudiantes" msprop:Generator_RowChangedName="EstudiantesRowChanged" msprop:Generator_RowChangingName="EstudiantesRowChanging" msprop:Generator_TableClassName="EstudiantesDataTable" msprop:Generator_RowClassName="EstudiantesRow" msprop:Generator_TableVarName="tableEstudiantes" msprop:Generator_UserTableName="Estudiantes">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Profesor" msprop:Generator_RowEvHandlerName="ProfesorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfesorRowDeleted" msprop:Generator_RowDeletingName="ProfesorRowDeleting" msprop:Generator_RowEvArgName="ProfesorRowChangeEvent" msprop:Generator_TablePropName="Profesor" msprop:Generator_RowChangedName="ProfesorRowChanged" msprop:Generator_RowChangingName="ProfesorRowChanging" msprop:Generator_TableClassName="ProfesorDataTable" msprop:Generator_RowClassName="ProfesorRow" msprop:Generator_TableVarName="tableProfesor" msprop:Generator_UserTableName="Profesor">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pueblos" msprop:Generator_RowEvHandlerName="PueblosRowChangeEventHandler" msprop:Generator_RowDeletedName="PueblosRowDeleted" msprop:Generator_RowDeletingName="PueblosRowDeleting" msprop:Generator_RowEvArgName="PueblosRowChangeEvent" msprop:Generator_TablePropName="Pueblos" msprop:Generator_RowChangedName="PueblosRowChanged" msprop:Generator_RowChangingName="PueblosRowChanging" msprop:Generator_TableClassName="PueblosDataTable" msprop:Generator_RowClassName="PueblosRow" msprop:Generator_TableVarName="tablePueblos" msprop:Generator_UserTableName="Pueblos">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
